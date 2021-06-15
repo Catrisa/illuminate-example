@@ -16,3 +16,20 @@ The app will perform these tasks:
 * Update answer by user
 * Delete question 
 
+Web with explain: https://code.tutsplus.com/tutorials/using-illuminate-database-with-eloquent-in-your-php-app-without-laravel--cms-27247?ec_unit=translation-info-language
+
+Once you have cloned this repository, enter in the folder and run the commands:
+  composer install
+  composer dump-autoload -o
+
+Questions
+	
+CREATE TABLE `questions` (
+ `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+ `question` tinytext,
+ `user_id` int(11) DEFAULT NULL,
+ `created_at` timestamp NULL DEFAULT NULL,
+ `updated_at` timestamp NULL DEFAULT NULL,
+ `deleted_at` timestamp NULL DEFAULT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
